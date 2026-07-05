@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alquiler Temporario en Mar del Plata | Grupo Nexus</title>
+  <meta name="description" content="Departamentos temporarios en Mar del Plata listos para tu estadía. Filtrá por barrio, capacidad y servicios, consultá disponibilidad y reservá por WhatsApp." />
+  <meta name="keywords" content="alquiler temporario Mar del Plata, departamentos temporarios Mar del Plata, alojamiento Mar del Plata" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo Grupo Nexus" />
+        <span class="brand-name"><span class="top">GRUPO</span><span class="main">NEXUS</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="alojamientos.html" class="active">Quiero alojarme</a></li>
+        <li><a href="propietarios.html">Rentabilizar mi propiedad</a></li>
+        <li><a href="estudiantes.html">Estudiantes</a></li>
+        <li><a href="nosotros.html">Grupo Nexus</a></li>
+        <li><a class="btn btn-gold btn-sm" href="https://wa.me/5492230000000" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero hero-inner-page">
+    <div class="container">
+      <span class="kicker">Quiero alojarme</span>
+      <h1>Encontrá tu lugar en Mar del Plata</h1>
+      <p class="lead">Propiedades seleccionadas, listas para disfrutar. Consultá disponibilidad y reservá de forma rápida y segura.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+
+      <form class="filters" id="filtros-alojamiento">
+        <div class="filter-group">
+          <label for="f-personas">Personas</label>
+          <select id="f-personas" name="personas">
+            <option value="">Cualquier cantidad</option>
+            <option value="2">2 o más</option>
+            <option value="4">4 o más</option>
+            <option value="6">6 o más</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="f-barrio">Barrio</label>
+          <select id="f-barrio" name="barrio">
+            <option value="">Todos</option>
+            <option value="playa-grande">Playa Grande</option>
+            <option value="centro">Centro</option>
+            <option value="guemes">Güemes</option>
+            <option value="la-perla">La Perla</option>
+            <option value="punta-mogotes">Punta Mogotes</option>
+          </select>
+        </div>
+        <div class="filter-group" style="flex:1">
+          <label>Servicios</label>
+          <div class="filter-checks">
+            <label class="chip"><input type="checkbox" name="mascotas" />🐾 Mascotas</label>
+            <label class="chip"><input type="checkbox" name="cochera" />🚗 Cochera</label>
+            <label class="chip"><input type="checkbox" name="wifi" />📶 Wifi</label>
+            <label class="chip"><input type="checkbox" name="vista" />🌊 Vista al mar</label>
+            <label class="chip"><input type="checkbox" name="parrilla" />🔥 Parrilla</label>
+            <label class="chip"><input type="checkbox" name="pileta" />🏊 Pileta</label>
+          </div>
+        </div>
+        <button type="reset" class="btn btn-outline-navy btn-sm">Limpiar</button>
+      </form>
+
+      <div class="prop-grid" id="grid-alojamiento">
+
+        <article class="prop-card" data-personas="4" data-barrio="playa-grande" data-mascotas="0" data-cochera="1" data-wifi="1" data-vista="1" data-parrilla="0" data-pileta="0">
+          <div class="prop-media">
+            <span class="prop-tag">Playa Grande</span>
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=60" alt="Departamento 2 ambientes con vista al mar en Playa Grande" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>2 ambientes con vista al mar</h3>
+            <div class="prop-meta"><span>👥 4 personas</span><span>🛏️ 2 amb</span><span>🚗 Cochera</span><span>📶 Wifi</span><span>🌊 Vista al mar</span></div>
+            <p class="prop-price">Desde USD 55 <small>/ noche</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20consultar%20por%20el%202%20ambientes%20con%20vista%20al%20mar%20en%20Playa%20Grande" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-navy btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20reservar%20el%202%20ambientes%20con%20vista%20al%20mar%20en%20Playa%20Grande.%20Fechas%3A" target="_blank" rel="noopener">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-personas="2" data-barrio="centro" data-mascotas="1" data-cochera="0" data-wifi="1" data-vista="0" data-parrilla="0" data-pileta="0">
+          <div class="prop-media">
+            <span class="prop-tag">Centro</span>
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=60" alt="Monoambiente luminoso en el centro de Mar del Plata" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>Monoambiente céntrico y luminoso</h3>
+            <div class="prop-meta"><span>👥 2 personas</span><span>🛏️ 1 amb</span><span>🐾 Mascotas</span><span>📶 Wifi</span></div>
+            <p class="prop-price">Desde USD 35 <small>/ noche</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20consultar%20por%20el%20monoambiente%20c%C3%A9ntrico" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-navy btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20reservar%20el%20monoambiente%20c%C3%A9ntrico.%20Fechas%3A" target="_blank" rel="noopener">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-personas="6" data-barrio="punta-mogotes" data-mascotas="1" data-cochera="1" data-wifi="1" data-vista="0" data-parrilla="1" data-pileta="1">
+          <div class="prop-media">
+            <span class="prop-tag">Punta Mogotes</span>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60" alt="Casa con pileta y parrilla en Punta Mogotes" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>Casa con pileta y parrilla</h3>
+            <div class="prop-meta"><span>👥 6 personas</span><span>🛏️ 3 amb</span><span>🏊 Pileta</span><span>🔥 Parrilla</span><span>🚗 Cochera</span><span>🐾 Mascotas</span></div>
+            <p class="prop-price">Desde USD 110 <small>/ noche</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20consultar%20por%20la%20casa%20con%20pileta%20en%20Punta%20Mogotes" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-navy btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20reservar%20la%20casa%20con%20pileta%20en%20Punta%20Mogotes.%20Fechas%3A" target="_blank" rel="noopener">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-personas="4" data-barrio="guemes" data-mascotas="0" data-cochera="1" data-wifi="1" data-vista="0" data-parrilla="1" data-pileta="0">
+          <div class="prop-media">
+            <span class="prop-tag">Güemes</span>
+            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=60" alt="Departamento 3 ambientes en zona Güemes" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>3 ambientes en zona Güemes</h3>
+            <div class="prop-meta"><span>👥 4 personas</span><span>🛏️ 3 amb</span><span>🚗 Cochera</span><span>🔥 Parrilla</span><span>📶 Wifi</span></div>
+            <p class="prop-price">Desde USD 70 <small>/ noche</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20consultar%20por%20el%203%20ambientes%20en%20G%C3%BCemes" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-navy btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20reservar%20el%203%20ambientes%20en%20G%C3%BCemes.%20Fechas%3A" target="_blank" rel="noopener">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-personas="2" data-barrio="la-perla" data-mascotas="0" data-cochera="0" data-wifi="1" data-vista="1" data-parrilla="0" data-pileta="0">
+          <div class="prop-media">
+            <span class="prop-tag">La Perla</span>
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=60" alt="Departamento frente al mar en La Perla" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>Frente al mar en La Perla</h3>
+            <div class="prop-meta"><span>👥 2 personas</span><span>🛏️ 2 amb</span><span>🌊 Vista al mar</span><span>📶 Wifi</span></div>
+            <p class="prop-price">Desde USD 48 <small>/ noche</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20consultar%20por%20el%20depto%20frente%20al%20mar%20en%20La%20Perla" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-navy btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20reservar%20el%20depto%20frente%20al%20mar%20en%20La%20Perla.%20Fechas%3A" target="_blank" rel="noopener">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-personas="6" data-barrio="playa-grande" data-mascotas="0" data-cochera="1" data-wifi="1" data-vista="1" data-parrilla="1" data-pileta="0">
+          <div class="prop-media">
+            <span class="prop-tag">Playa Grande</span>
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=60" alt="Casa premium con vista al mar en Playa Grande" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>Casa premium con vista al mar</h3>
+            <div class="prop-meta"><span>👥 6 personas</span><span>🛏️ 4 amb</span><span>🌊 Vista al mar</span><span>🔥 Parrilla</span><span>🚗 Cochera</span></div>
+            <p class="prop-price">Desde USD 140 <small>/ noche</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20consultar%20por%20la%20casa%20premium%20en%20Playa%20Grande" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-navy btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20quiero%20reservar%20la%20casa%20premium%20en%20Playa%20Grande.%20Fechas%3A" target="_blank" rel="noopener">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="filters-empty" id="sin-resultados">No encontramos propiedades con esos filtros. Probá quitando alguno o <a href="https://wa.me/5492230000000" style="color:var(--gold);font-weight:600" target="_blank" rel="noopener">escribinos por WhatsApp</a> y te ayudamos a encontrar tu lugar.</p>
+    </div>
+  </section>
+
+  <!-- CÓMO RESERVAR -->
+  <section class="section-alt">
+    <div class="container">
+      <span class="kicker">Sistema de reservas</span>
+      <h2>Reservar es muy simple</h2>
+      <div class="grid grid-4">
+        <div class="card step"><div class="num">01</div><h3>Elegí tu propiedad</h3><p>Usá los filtros para encontrar el lugar ideal para tu estadía.</p></div>
+        <div class="card step"><div class="num">02</div><h3>Consultá disponibilidad</h3><p>Escribinos por WhatsApp con tus fechas y te confirmamos al instante.</p></div>
+        <div class="card step"><div class="num">03</div><h3>Solicitá tu reserva</h3><p>Te enviamos las condiciones y el detalle de la seña de forma clara.</p></div>
+        <div class="card step"><div class="num">04</div><h3>Confirmación</h3><p>Recibís la confirmación con toda la información de tu llegada.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark cta-band">
+    <div class="container">
+      <h2>¿No encontrás lo que buscás?</h2>
+      <p class="section-intro" style="margin-inline:auto">Contanos qué necesitás y te proponemos opciones de nuestra cartera que se ajusten a tu estadía.</p>
+      <a class="btn btn-gold" href="https://wa.me/5492230000000" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/img/logo.svg" alt="Grupo Nexus" />
+            <span class="brand-name"><span class="top" style="color:var(--gold)">GRUPO</span><span class="main" style="color:#fff">NEXUS</span></span>
+          </div>
+          <p class="footer-desc">Gestión integral de propiedades en Mar del Plata. Tranquilidad para propietarios, excelente experiencia para huéspedes.</p>
+        </div>
+        <div>
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="alojamientos.html">Quiero alojarme</a></li>
+            <li><a href="propietarios.html">Rentabilizar mi propiedad</a></li>
+            <li><a href="estudiantes.html">Estudiantes</a></li>
+            <li><a href="nosotros.html">Grupo Nexus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Seguinos</h4>
+          <ul>
+            <li><a href="https://instagram.com/gruponexus.mdp" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/gruponexus.mdp" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/5492230000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>📍 Mar del Plata, Argentina</li>
+            <li>📞 +54 9 223 XXX-XXXX</li>
+            <li>✉️ info@gruponexus.com.ar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Grupo Nexus · Mar del Plata</span>
+        <span>Sitio desarrollado por <a href="https://malawebs.com" target="_blank" rel="noopener">Malawebs</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5492230000000" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

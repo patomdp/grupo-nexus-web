@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alquiler para Estudiantes en Mar del Plata | Grupo Nexus</title>
+  <meta name="description" content="Alquileres para estudiantes en Mar del Plata de marzo a diciembre. Propiedades confiables, requisitos claros y acompañamiento durante todo el ciclo lectivo." />
+  <meta name="keywords" content="alquiler estudiantes Mar del Plata, alquiler estudiantil Mar del Plata, departamentos para estudiantes" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo Grupo Nexus" />
+        <span class="brand-name"><span class="top">GRUPO</span><span class="main">NEXUS</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="alojamientos.html">Quiero alojarme</a></li>
+        <li><a href="propietarios.html">Rentabilizar mi propiedad</a></li>
+        <li><a href="estudiantes.html" class="active">Estudiantes</a></li>
+        <li><a href="nosotros.html">Grupo Nexus</a></li>
+        <li><a class="btn btn-gold btn-sm" href="https://wa.me/5492230000000" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero hero-inner-page">
+    <div class="container">
+      <span class="kicker">Estudiantes</span>
+      <h1>Tu alquiler para todo el ciclo lectivo</h1>
+      <p class="lead">Propiedades disponibles de marzo a diciembre, con requisitos claros y un equipo que te acompaña durante todo el año.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+
+      <form class="filters" id="filtros-estudiantes">
+        <div class="filter-group">
+          <label for="e-precio">Precio máximo</label>
+          <select id="e-precio" name="precio">
+            <option value="">Sin límite</option>
+            <option value="350000">Hasta $350.000</option>
+            <option value="450000">Hasta $450.000</option>
+            <option value="600000">Hasta $600.000</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="e-barrio">Barrio</label>
+          <select id="e-barrio" name="barrio">
+            <option value="">Todos</option>
+            <option value="centro">Centro</option>
+            <option value="la-perla">La Perla</option>
+            <option value="guemes">Güemes</option>
+            <option value="plaza-mitre">Plaza Mitre</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="e-ambientes">Ambientes (mínimo)</label>
+          <select id="e-ambientes" name="ambientes">
+            <option value="">Cualquiera</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+          </select>
+        </div>
+        <button type="reset" class="btn btn-outline-navy btn-sm">Limpiar</button>
+      </form>
+
+      <div class="prop-grid" id="grid-estudiantes">
+
+        <article class="prop-card" data-precio="320000" data-barrio="centro" data-ambientes="1">
+          <div class="prop-media">
+            <span class="prop-tag">Centro</span>
+            <img src="https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=60" alt="Monoambiente estudiantil cerca de la universidad" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>Monoambiente a 5 cuadras de la universidad</h3>
+            <div class="prop-meta"><span>🛏️ 1 amb</span><span>📶 Wifi</span><span>🗓️ Marzo a diciembre</span></div>
+            <p class="prop-price">$320.000 <small>/ mes</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20soy%20estudiante%20y%20quiero%20consultar%20por%20el%20monoambiente%20en%20el%20Centro" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-precio="420000" data-barrio="la-perla" data-ambientes="2">
+          <div class="prop-media">
+            <span class="prop-tag">La Perla</span>
+            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=60" alt="Departamento 2 ambientes para estudiantes en La Perla" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>2 ambientes luminoso en La Perla</h3>
+            <div class="prop-meta"><span>🛏️ 2 amb</span><span>📶 Wifi</span><span>🗓️ Marzo a diciembre</span></div>
+            <p class="prop-price">$420.000 <small>/ mes</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20soy%20estudiante%20y%20quiero%20consultar%20por%20el%202%20ambientes%20en%20La%20Perla" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-precio="550000" data-barrio="guemes" data-ambientes="3">
+          <div class="prop-media">
+            <span class="prop-tag">Güemes</span>
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=60" alt="Departamento 3 ambientes ideal para compartir en Güemes" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>3 ambientes ideal para compartir</h3>
+            <div class="prop-meta"><span>🛏️ 3 amb</span><span>👥 Hasta 3 estudiantes</span><span>🗓️ Marzo a diciembre</span></div>
+            <p class="prop-price">$550.000 <small>/ mes</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20somos%20estudiantes%20y%20queremos%20consultar%20por%20el%203%20ambientes%20en%20G%C3%BCemes" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-precio="380000" data-barrio="plaza-mitre" data-ambientes="2">
+          <div class="prop-media">
+            <span class="prop-tag">Plaza Mitre</span>
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=60" alt="Departamento 2 ambientes frente a Plaza Mitre" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>2 ambientes frente a Plaza Mitre</h3>
+            <div class="prop-meta"><span>🛏️ 2 amb</span><span>📶 Wifi</span><span>🗓️ Marzo a diciembre</span></div>
+            <p class="prop-price">$380.000 <small>/ mes</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20soy%20estudiante%20y%20quiero%20consultar%20por%20el%202%20ambientes%20en%20Plaza%20Mitre" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-precio="300000" data-barrio="centro" data-ambientes="1">
+          <div class="prop-media">
+            <span class="prop-tag">Centro</span>
+            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=60" alt="Monoambiente económico para estudiantes en el centro" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>Monoambiente económico y equipado</h3>
+            <div class="prop-meta"><span>🛏️ 1 amb</span><span>📶 Wifi</span><span>🗓️ Marzo a diciembre</span></div>
+            <p class="prop-price">$300.000 <small>/ mes</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20soy%20estudiante%20y%20quiero%20consultar%20por%20el%20monoambiente%20econ%C3%B3mico%20del%20Centro" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop-card" data-precio="480000" data-barrio="la-perla" data-ambientes="3">
+          <div class="prop-media">
+            <span class="prop-tag">La Perla</span>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=60" alt="Departamento 3 ambientes cerca del mar en La Perla" loading="lazy" />
+          </div>
+          <div class="prop-body">
+            <h3>3 ambientes a 2 cuadras del mar</h3>
+            <div class="prop-meta"><span>🛏️ 3 amb</span><span>👥 Hasta 3 estudiantes</span><span>🗓️ Marzo a diciembre</span></div>
+            <p class="prop-price">$480.000 <small>/ mes</small></p>
+            <div class="prop-actions">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5492230000000?text=Hola%2C%20somos%20estudiantes%20y%20queremos%20consultar%20por%20el%203%20ambientes%20en%20La%20Perla" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="filters-empty" id="sin-resultados-est">No encontramos propiedades con esos filtros. <a href="https://wa.me/5492230000000" style="color:var(--gold);font-weight:600" target="_blank" rel="noopener">Escribinos por WhatsApp</a> y te avisamos cuando haya disponibilidad.</p>
+    </div>
+  </section>
+
+  <!-- REQUISITOS Y GARANTÍAS -->
+  <section class="section-alt">
+    <div class="container">
+      <span class="kicker">Requisitos y garantías</span>
+      <h2>Claro desde el primer día</h2>
+      <div class="grid grid-3">
+        <div class="card"><div class="icon">📋</div><h3>Requisitos</h3><p>DNI del estudiante y del garante, constancia de inscripción o alumno regular, y datos de contacto de los padres o tutores.</p></div>
+        <div class="card"><div class="icon">🛡️</div><h3>Garantías</h3><p>Aceptamos garantía propietaria, recibo de sueldo del garante o seguro de caución, según el caso. Te explicamos las opciones sin vueltas.</p></div>
+        <div class="card"><div class="icon">🗓️</div><h3>Contrato marzo–diciembre</h3><p>Contratos pensados para el ciclo lectivo completo, con condiciones claras de ingreso, egreso y renovación.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div style="text-align:center">
+        <span class="kicker">Preguntas frecuentes</span>
+        <h2>Dudas de estudiantes</h2>
+      </div>
+      <div class="faq">
+        <details><summary>¿Los alquileres incluyen expensas y servicios?</summary><p>Depende de cada propiedad. En cada ficha te detallamos exactamente qué incluye el precio y qué se paga aparte, antes de firmar.</p></details>
+        <details><summary>¿Puedo compartir el departamento con otros estudiantes?</summary><p>Sí, en las propiedades aptas para compartir. Indicamos la capacidad máxima en cada ficha y armamos el contrato acorde.</p></details>
+        <details><summary>¿Qué pasa si tengo un problema durante el año?</summary><p>Nos escribís por WhatsApp y lo resolvemos nosotros: mantenimiento, dudas de contrato o cualquier inconveniente con la propiedad.</p></details>
+        <details><summary>¿Puedo reservar antes de marzo?</summary><p>Sí, de hecho lo recomendamos: las mejores propiedades se reservan entre noviembre y febrero. Escribinos y te anotamos.</p></details>
+        <details><summary>¿Necesito garante sí o sí?</summary><p>Necesitamos alguna garantía, pero hay varias opciones (garante con recibo, garantía propietaria o seguro de caución). Te ayudamos a encontrar la que puedas cumplir.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark cta-band">
+    <div class="container">
+      <h2>Asegurá tu lugar para el próximo ciclo lectivo</h2>
+      <p class="section-intro" style="margin-inline:auto">Contanos qué buscás y tu presupuesto. Te proponemos opciones y coordinamos una visita.</p>
+      <a class="btn btn-gold" href="https://wa.me/5492230000000?text=Hola%2C%20soy%20estudiante%20y%20busco%20alquiler%20de%20marzo%20a%20diciembre" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/img/logo.svg" alt="Grupo Nexus" />
+            <span class="brand-name"><span class="top" style="color:var(--gold)">GRUPO</span><span class="main" style="color:#fff">NEXUS</span></span>
+          </div>
+          <p class="footer-desc">Gestión integral de propiedades en Mar del Plata. Tranquilidad para propietarios, excelente experiencia para huéspedes.</p>
+        </div>
+        <div>
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="alojamientos.html">Quiero alojarme</a></li>
+            <li><a href="propietarios.html">Rentabilizar mi propiedad</a></li>
+            <li><a href="estudiantes.html">Estudiantes</a></li>
+            <li><a href="nosotros.html">Grupo Nexus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Seguinos</h4>
+          <ul>
+            <li><a href="https://instagram.com/gruponexus.mdp" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/gruponexus.mdp" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/5492230000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>📍 Mar del Plata, Argentina</li>
+            <li>📞 +54 9 223 XXX-XXXX</li>
+            <li>✉️ info@gruponexus.com.ar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Grupo Nexus · Mar del Plata</span>
+        <span>Sitio desarrollado por <a href="https://malawebs.com" target="_blank" rel="noopener">Malawebs</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5492230000000" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
